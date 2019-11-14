@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorButton">#043871</color>
+    <color name="white">#FFFFFF</color>
+    <color name="clockin">#20A200</color>
+    <color name="clockout">#BB0000</color>
+    <color name="listtext_parent">#FFF2E6</color>
+    <color name="color_background">#E5E5E5</color>
+</resources>

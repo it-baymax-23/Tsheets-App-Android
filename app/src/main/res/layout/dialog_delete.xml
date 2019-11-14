@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_dialog"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/background_border"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/error_text"
+                android:textAppearance="@style/title"
+                android:textAlignment="center"
+                android:textFontWeight="bold"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Delete"
+                android:background="@drawable/border_left_bottom"
+                android:textAppearance="@style/button_text"
+                android:paddingBottom="16dp"
+                android:textColor="#F00"
+                android:paddingTop="16dp"
+                android:id="@+id/delete"
+                android:layout_weight="1"
+                ></Button>
+            <Button android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/cancel"
+                android:background="@drawable/border_right_bottom"
+                android:textAppearance="@style/button_text"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:id="@+id/cancel"
+                android:layout_weight="1"
+                ></Button>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

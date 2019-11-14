@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tsheetapp">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.CAMERA"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+
+
+    <application
+        android:name=".TsheetApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        >
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+        <activity android:name=".FirstPage"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".SwitchTimeSheet"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".DashboardActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".TimeCardActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".LoginActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".SignUpActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".EmployeeActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".AddJobActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".ScheduleView"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".ShiftAddActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".SearchJob"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".TextAreaActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".ColorActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".AddTimeSheet"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".TimesheetView"
+            android:screenOrientation="portrait"></activity>
+        <service android:name=".TimeTractService"
+            android:screenOrientation="portrait"></service>
+        <activity android:name=".ShiftView"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".TimeSheetEdit"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".ImageActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".Profile"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".ChangePassword"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".MoreActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".AddEmployeer"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".WorkingEmployeer"
+            android:screenOrientation="portrait"></activity>
+        <!--<activity android:name=".LoginActivity"></activity>-->
+        <!--<activity android:name=".SignUpActivity"></activity>-->
+        <!--<activity android:name=".TimeCardActivity"></activity>-->
+    </application>
+
+</manifest>

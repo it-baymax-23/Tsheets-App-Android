@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E5E5E5"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginBottom="1dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            >
+            <ImageButton
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/arrow_left"
+                android:layout_marginLeft="19dp"
+                android:background="#FFF"
+                android:onClick="onClick"
+                android:id="@+id/cancel"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Employeer"
+                android:textAppearance="@style/s"
+                android:layout_centerInParent="true"
+                android:id="@+id/title_textarea"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="SAVE"
+                android:textColor="#0D65C6"
+                android:textSize="16dp"
+                android:layout_marginRight="18dp"
+                android:onClick="onClick"
+                android:id="@+id/save"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="1dp"
+            android:background="#FFF"
+            android:padding="10dp"
+            >
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/employeelist"
+                ></ListView>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
